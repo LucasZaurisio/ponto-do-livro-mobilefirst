@@ -1,0 +1,14 @@
+@import url("styles/header.css");
+@import url("styles/swiper.css");
+:root{
+    --cor-de-fundo: #eaf5ff;
+    --branco: #FFFFFF;
+    --degrade-header:  #d9f6ff;
+    --fonte-principal: "Questrial";
+    --preto: #474545;
+    --cinza: #858585;
+}
+body{
+background-color: var(--cor-de-fundo);
+font-family: var(--fonte-principal);
+}

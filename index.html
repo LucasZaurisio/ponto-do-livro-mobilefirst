@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ponto do Livro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox"id="menu" class="container__button">
+            <label for="menu" class="container__label">
+                <span class="header__hamburger-menu container__image"></span>
+            </label>   
+            <ul class="menu-list">
+                <li class="menu-list__item">
+                    <a href="#"class="menu-list__link">Inicio</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#"class="menu-list__link">Sobre</a>
+                </li> 
+                <li class="menu-list__item">
+                    <a href="#"class="menu-list__link">livros</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#"class="menu-list__link">Locais</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#"class="menu-list__link">Contatos</a>
+                </li>
+            </ul>
+            <a href="#"><img src="img/logoheader.png" alt="logo ponto do Livro" class="container__image" id="logo"></a>  
+        </div>
+    </header>
+    <section>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/books1.jpg" alt="livros" class="swiper-slide__image"></div>
+                <div class="swiper-slide"><img src="img/books2.jpg" alt="Livros" class="swiper-slide__image"></div>
+                <div class="swiper-slide"><img src="img/reader1.jpg" alt="pessoa lendo o livro" class="swiper-slide__image"></div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        speed: 500,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        autoplay: {
+        delay: 5000,
+        }
+        });
+    </script>
+</body>
+</html>
