@@ -1,5 +1,10 @@
 @import url("styles/header.css");
 @import url("styles/swiper.css");
+@import url("styles/about.css");
+@import url("styles/tradepoints.css");
+@import url("styles/bookshelf.css");
+@import url("styles/footer.css");
+
 :root{
     --cor-de-fundo: #eaf5ff;
     --branco: #FFFFFF;

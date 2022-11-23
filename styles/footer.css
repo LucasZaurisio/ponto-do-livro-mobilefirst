@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-around; 
+}
+.footer__title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--preto);
+}
+.footer__image{
+    display: flex;
+    gap: 1em;
+}
+.footer__image-link{
+    width: 40px;
+    height: 40px;
+}

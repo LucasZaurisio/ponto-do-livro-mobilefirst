@@ -1,4 +1,19 @@
 .swiper-slide__image{
-    width: 100vw;
-    height: 30vh;  
+    width: 100%;
+}
+.swiper{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+@media screen and (min-width:821px) {
+    .swiper{
+        width: 80%;
+        height: 70vh;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+    }
 }

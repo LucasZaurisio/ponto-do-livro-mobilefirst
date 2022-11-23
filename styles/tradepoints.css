@@ -1,0 +1,42 @@
+.tradepoints{
+    text-align: center;
+}
+.tradepoints__title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--preto);
+}
+.tradepoints__text{
+    padding: 1em;
+}
+.tradepoints__item{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+}
+.tradepoints__item-map{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px var(--cinza);
+}
+@media screen and (min-width:821px) {
+    .tradepoints{
+        margin-top: 2em;
+    }
+    .tradepoints__item{
+        display: flex;
+        width: 70%;
+        margin: 2em auto 0;
+    }
+    .tradepoints__title{
+        font-size: 32px;
+    }
+    .tradepoints__text{
+        font-size: 24px;
+    }
+    .tradepoints__item{
+        display: flex;
+        flex-direction: row;
+    }
+}
