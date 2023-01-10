@@ -18,7 +18,8 @@
 .container{
     display: flex;
     align-items: center;
-    gap: 6em;
+    gap: calc(50% - 88px);
+    width: 100%;
 }
 .menu-list{
     display: none;
@@ -66,6 +67,12 @@
     }
     .header{
         margin: 0 auto 0;
+    }
+    .container{
+        display: flex; 
+        align-items: center;
+        width: 100%;
+        gap: 6em;
     }
 
 }
